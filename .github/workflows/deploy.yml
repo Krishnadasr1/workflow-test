@@ -16,6 +16,7 @@ jobs:
           host: ${{ secrets.VM_HOST }}
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.VM_PORT }}
           script: |
             cd ~/myapp
             git pull origin main
